@@ -16,7 +16,6 @@ body {
 
 header {
     background-color: #FFF;
-    margin: auto -16px;
     padding: 16px 32px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
@@ -25,18 +24,25 @@ header button {
     margin: auto 10px;
 }
 
-.container {
-    margin: 10% auto;
-    padding: 60px 0;
+h4::before {
+    content: "Hello ";
+    text-transform: capitalize;
 }
 
-.col-md-6 {
-    background-color: #919191;
+h4 {
+    font-weight: 300;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.container {
+    margin: 8% auto;
 }
 
 form {
-    padding: 30px 10px;
+    padding: 30px 20px;
     position: relative;
+    background-color: #919191;
 }
 
 form label {
